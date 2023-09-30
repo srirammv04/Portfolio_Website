@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/cc132c2e43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container-1">
+            <nav>
+                <div class="container-left">
+                    <h1>Sri<span>Ram</span>.</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#certifications" onclick="closemenu()">Certifications</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-angle-right" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1><br>Hi,</h1>
+            <h2>I'm Sri<span>ram</span> M.V,</h2>
+            <h3>Computer Science Engineer</h3>
+            <p>web development / app development</p>
+        </div>
+    </div>
+
+<!-----------About----------->
+
+     <div id="about">
+        <div class="container-2">
+            <div class="sub-title">About <span>Me</span></div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/myPhoto.jpg">
+                </div>
+                <div class="col-2">
+                    <h1>Welcome to my portfolio website!</h1>
+                    <p>Hi, I'm <b>Sriram M.V</b>, a passionate and driven computer science engineering student. With a strong foundation in computer science principles and a curiosity for emerging technologies, I am constantly seeking new ways to expand my knowledge and apply it to real-world challenges.
+                       Throughout my academic journey, I have honed my skills in various programming languages. What truly fuels my enthusiasm for computer science is its ability to impact people's lives. I believe technology has the power to transform the world and improve the way we live, work, and connect with each other. 
+                       I am excited to share my portfolio, which showcases my projects and achievements, giving you a glimpse into my technical abilities. I hope that you find inspiration and insight as you explore my work.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-name active-name" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-name" onclick="openTab('education')">Education</p>
+                        <p class="tab-name" onclick="openTab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span>
+                                <br>Python
+                                <br>Java
+                                <br>C
+                                <br>C++
+                                <br>SQL
+                                <br>HTML CSS & JavaScript
+                            </li>
+                            <li><span>App Development</span>
+                                <br>Flutter android app development
+                            </li>
+                            <li><span>Web Development</span>
+                                <br>Designing frontend of webpages
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span>
+                                <br>Canara Engineering College, Mangalore
+                                <br>Computer Science & Engineering
+                                <br>7.83 CGPA (till 6th sem)
+                            </li>
+                            <li><span>2020</span>
+                                <br>Sri Venkataramana PU College, Kundapura
+                                <br>12<sup>th</sup> grade
+                                <br>86%
+                            </li>
+                            <li><span>2018</span>
+                                <br>Sri Venkataramana English Medium School, Kundapura
+                                <br>10<sup>th</sup> grade
+                                <br>90%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Sports</span>
+                                <br>Cricket
+                                <br>Kabaddi
+                                <br>Running
+                            </li>
+                            <li><span>Art</span>
+                                <br>Drawing
+                                <br>Painting
+                                <br>Sketching
+                            </li>
+                            <li><span>Writing</span>
+                                <br>Quotes
+                                <br>Proverbs
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Projects----------->
+
+    <div id="projects">
+        <div class="container-3">
+            <div class="sub-title">My <span>Projects</span></div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/path_visualizer.png">
+                    <div class="info">
+                        <h3>Path Finding Visualizer</h3>
+                        <p>This project is based on Dijkstra's algorithm for finding the shortest possible path between a starting node and a target node using a Python module called PyGame. The starting and target nodes, along with the blocking nodes or walls, can be set by the user and the shortest path between them, ignoring all the intermediate walls, will be auto-generated by the program.</p>
+                        <a href="https://github.com/SriramMV04/Path_Finding_Visualizer.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/run_machine.jpg">
+                    <div class="info">
+                        <h3>RUN MACHINE - cricket app</h3>
+                        <p>This project is an android cricket application developed using Flutter with the help of APIs. The app offers real-time cricket score info, results, latest cricket match fixtures, trending cricket news, current ICC men and women player rankings, current ICC men and women team rankings, IPL leaderboard and player statistics and also provides fantasy cricket tips for the users.</p>
+                        <a href="https://github.com/SriramMV04/RUN_MACHINE_app.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/cornflix.jpg">
+                    <div class="info">
+                        <h3>Cornflix - movies app</h3>
+                        <p>This project is an android movies application developed using flutter with the help of TMDB and other APIs. This app shows the details of latest, top-rated and upcoming movies, TV shows and anime. This app is the perfect way to know about movies, TV shows, anime and stay up-to-date on the latest releases, popular and top-rated contents.</p>
+                        <a href="https://github.com/SriramMV04/Cornflix_app.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Certifications-------------->
+
+    <div id="certifications">
+        <div class="container-4">
+            <div class="sub-title">My <span>Certifications</span></div>
+            <div class="certification-list">
+                <div class="certificate">
+                    <img src="images/python.jpg">
+                    <div class="info">
+                        <h3>Python for Beginners</h3>
+                        <p>This Python basics course covers basic and advanced concepts in Python. This course involves detailed explanation about data types, variables, lists, tuples, dictionaries, loops, user-defined functions and OOP's.</p>
+                        <a href="https://simpli.app.link/vNlCxFKYmBb" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/html.jpg">
+                    <div class="info">
+                        <h3>HTML and CSS for Beginners</h3>
+                        <p>This course offers a complete guide on how to use HTML, CSS and JavaScript for designing and developing creative and modern webpages.</p>
+                        <a href="https://www.udemy.com/certificate/UC-4d95f5c4-7364-4baf-8ba8-cf42f3ba3ae4/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/java.jpg">
+                    <div class="info">
+                        <h3>Introduction to Java</h3>
+                        <p>This course includes hands-on practice and will give a solid knowledge of the Java language. This course explains Java's benefits, program in basic Java syntax using Java data types, branches and loops.</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/Y4WRURL45HZJ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Contact-------------->
+
+    <div id="contact">
+        <div class="container-5">
+            <div class="sub-title">Contact <span>Me</span></div>
+            <div class="row">
+                <div class="contact-left-col">
+                    <div class="mail">
+                        <a href="mailto:srirammv04@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i>srirammv04@gmail.com</a>
+                    </div>
+                    <div class="phone">
+                        <p><i class="fa-solid fa-phone"></i>+91 7411013385</p>
+                    </div>
+                    <a href="files/my_Resume.pdf" download class="btn btn-1">Download CV</a>
+                    <div class="social-media-icons">
+                        <a href="https://twitter.com/mvRam04" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.facebook.com/sriram.mv.79" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/sriram-m-v-a9622425a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SriramMV04" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right-col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="text" name="E-mail" placeholder="Enter your e-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message" required></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+            <a href="#header"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
+        </div>
+    </div>
+
+    <!-----------Copyright-------------->
+
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Copyright @ Sriram MV</p>
+    </div>
+
+    <!-----------Script for sidemenu-------------->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    </script>
+
+    <!-----------Script for submit button-------------->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4ZXnL8afrRdBDVl7e4-wix3Ve5k5ZMzcp7Hnc1i8Q6eI5xS-UG-KZTQtGwRPaWL5Djw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("message")
+  
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            }
+        )
+    </script>
+
+</body>
+</html>
