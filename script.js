@@ -4,14 +4,14 @@ var tabname;
 var tabcontent;
 
 function openTab(tablink) {
-    for (tabname of tabnames) {
-        tabname.classList.remove("active-name");
-    }
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-name");
-    document.getElementById(tablink).classList.add("active-tab");
+  for (tabname of tabnames) {
+    tabname.classList.remove("active-name");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-name");
+  document.getElementById(tablink).classList.add("active-tab");
 }
 
 /*

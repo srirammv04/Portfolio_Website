@@ -20,20 +20,17 @@
     ></script>
   </head>
   <body>
-    <!-----------Stars Animation----------->
+    <!----------- Stars Background Animation ----------->
 
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
 
-    <!-----------Nav Bar----------->
+    <!----------- Nav Bar ----------->
 
     <div id="header">
       <div class="container-1">
-        <nav>
-          <div class="container-left">
-            <h1>Sri<span>Ram</span>.</h1>
-          </div>
+        <nav class="centered-nav-bar">
           <ul id="sidemenu">
             <li><a href="#header" onclick="closemenu()">Home</a></li>
             <li><a href="#about" onclick="closemenu()">About</a></li>
@@ -51,90 +48,85 @@
         </nav>
       </div>
       <div class="header-text">
-        <h1><br />Hi,</h1>
-        <h2>I'm Sri<span>ram</span> M V,</h2>
-        <h3>Computer Science Engineer</h3>
-        <p>web development / app development</p>
+        <h1><br />Hey there!</h1>
+        <h2>I'm <span>Sriram M V</span></h2>
+        <h3>Full Stack Developer | Mobile App Developer</h3>
+        <p>"Quantity in hardwork and Quality in execution"</p>
       </div>
     </div>
 
-    <!-----------About----------->
+    <!----------- About ----------->
 
     <div id="about">
       <div class="container-2">
-        <div class="sub-title">About <span>Me</span></div>
-        <div class="row">
-          <div class="col-1">
-            <img src="images/myPhoto.jpg" />
-          </div>
-          <div class="col-2">
-            <h1>Welcome to my portfolio website!</h1>
-            <p>
-              Hi, I'm <b>Sriram M.V</b>, a passionate and driven computer
-              science engineering student. With a strong foundation in computer
-              science principles and a curiosity for emerging technologies, I am
-              constantly seeking new ways to expand my knowledge and apply it to
-              real-world challenges. Throughout my academic journey, I have
-              honed my skills in various programming languages. What truly fuels
-              my enthusiasm for computer science is its ability to impact
-              people's lives. I believe technology has the power to transform
-              the world and improve the way we live, work, and connect with each
-              other. I am excited to share my portfolio, which showcases my
-              projects and achievements, giving you a glimpse into my technical
-              abilities. I hope that you find inspiration and insight as you
-              explore my work.
+        <div class="sub-title-about"><span>About</span> Me</div>
+        <div class="col-2">
+          <p>
+            Hi, I'm <b>Sriram M.V</b>, a passionate and driven computer science
+            engineering student. With a strong foundation in computer science
+            principles and a curiosity for emerging technologies, I am
+            constantly seeking new ways to expand my knowledge and apply it to
+            real-world challenges. Throughout my academic journey, I have honed
+            my skills in various programming languages. What truly fuels my
+            enthusiasm for computer science is its ability to impact people's
+            lives. I believe technology has the power to transform the world and
+            improve the way we live, work, and connect with each other. I am
+            excited to share my portfolio, which showcases my projects and
+            achievements, giving you a glimpse into my technical abilities. I
+            hope that you find inspiration and insight as you explore my work.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-name active-name" onclick="openTab('skills')">
+              Skills
             </p>
-            <div class="tab-titles">
-              <p class="tab-name active-name" onclick="openTab('skills')">
-                Skills
-              </p>
-              <p class="tab-name" onclick="openTab('education')">Education</p>
-              <p class="tab-name" onclick="openTab('hobbies')">Hobbies</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Programming Languages</span> <br />Python <br />Java
-                  <br />C <br />C++ <br />SQL <br />HTML CSS & JavaScript
-                </li>
-                <li>
-                  <span>App Development</span> <br />Flutter android app
-                  development
-                </li>
-                <li>
-                  <span>Web Development</span> <br />Designing frontend of
-                  webpages
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>2024</span> <br />Canara Engineering College, Mangalore
-                  <br />Computer Science & Engineering <br />7.83 CGPA (till 6th
-                  sem)
-                </li>
-                <li>
-                  <span>2020</span> <br />Sri Venkataramana PU College,
-                  Kundapura <br />12<sup>th</sup> grade <br />86%
-                </li>
-                <li>
-                  <span>2018</span> <br />Sri Venkataramana English Medium
-                  School, Kundapura <br />10<sup>th</sup> grade <br />90%
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="hobbies">
-              <ul>
-                <li>
-                  <span>Sports</span> <br />Cricket <br />Kabaddi <br />Running
-                </li>
-                <li>
-                  <span>Art</span> <br />Drawing <br />Painting <br />Sketching
-                </li>
-                <li><span>Writing</span> <br />Quotes <br />Proverbs</li>
-              </ul>
-            </div>
+            <p class="tab-name" onclick="openTab('education')">Education</p>
+            <p class="tab-name" onclick="openTab('hobbies')">Hobbies</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Programming Languages</span> <br /><br />Java
+                <br />JavaScript <br />SQL <br />HTML & CSS
+              </li>
+              <li>
+                <span>App Development</span> <br /><br />Flutter android app
+                development
+              </li>
+              <li>
+                <span>Web Development</span> <br /><br />Designing frontend of
+                webpages
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2024</span> <br /><br />Canara Engineering College,
+                Mangalore <br />Computer Science & Engineering <br />7.83 CGPA
+                (till 6th sem)
+              </li>
+              <li>
+                <span>2020</span> <br /><br />Sri Venkataramana PU College,
+                Kundapura <br />12<sup>th</sup> grade <br />86%
+              </li>
+              <li>
+                <span>2018</span> <br /><br />Sri Venkataramana English Medium
+                School, Kundapura <br />10<sup>th</sup> grade <br />90%
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li>
+                <span>Sports</span> <br /><br />Cricket <br />Kabaddi
+                <br />Running
+              </li>
+              <li>
+                <span>Art</span> <br /><br />Drawing <br />Painting
+                <br />Sketching
+              </li>
+              <li><span>Writing</span> <br /><br />Quotes <br />Proverbs</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -144,7 +136,7 @@
 
     <div id="projects">
       <div class="container-3">
-        <div class="sub-title">My <span>Projects</span></div>
+        <div class="sub-title-projects">My <span>Projects</span></div>
         <div class="project-list">
           <div class="project">
             <img src="images/path_visualizer.png" />
@@ -211,7 +203,9 @@
 
     <div id="certifications">
       <div class="container-4">
-        <div class="sub-title">My <span>Certifications</span></div>
+        <div class="sub-title-certifications">
+          My <span>Certifications</span>
+        </div>
         <div class="certification-list">
           <div class="certificate">
             <img src="images/python.jpg" />
@@ -269,7 +263,7 @@
 
     <div id="contact">
       <div class="container-5">
-        <div class="sub-title">Contact <span>Me</span></div>
+        <div class="sub-title-contacts">Contact <span>Me</span></div>
         <div class="row">
           <div class="contact-left-col">
             <div class="mail">

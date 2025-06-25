@@ -588,44 +588,32 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  /* background-image: url(images/background.jpg);
-  background-size: cover;
-  background-position: center; */
 }
 
-.container-1 {
-  margin-top: 20px;
-  margin-left: 30px;
-}
-
-nav {
+.centered-nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  float: left;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.container-left {
-  margin-right: 80px;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: "Sen", sans-serif;
-  color: white;
-}
-
-h1 span {
-  color: red;
-  font-size: 50px;
-  font-family: "Sen", sans-serif;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
 }
 
 nav ul li {
-  font-size: 16px;
+  font-size: 1.2em;
   font-weight: bold;
   display: inline-block;
   list-style: none;
@@ -634,16 +622,25 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-family: "Robotto", sans-serif;
+  font-family: monospace;
   position: relative;
   color: white;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
 }
 
 nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: red;
+  background: #cf59e6;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -651,119 +648,143 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+  width: 80%;
 }
 
 .header-text {
-  padding: 10% 30px;
+  padding: 8% 30px 10% 30px;
+  text-align: center;
 }
 
 .header-text h1 {
-  font-size: 60px;
+  font-size: 4rem;
   font-family: "Sen", sans-serif;
 }
 
 .header-text h2 {
-  font-size: 50px;
+  font-size: 6rem;
   font-family: "Sen", sans-serif;
 }
 
 .header-text h2 span {
-  color: red;
-  font-size: 50px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header-text h3 {
-  font-size: 40px;
-  font-family: "Sen", sans-serif;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-family: monospace;
 }
 
 .header-text p {
+  margin-top: 40px;
   color: grey;
-  padding-top: 10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-h1 span:hover {
-  color: green;
-}
-
-.header-text h2 span:hover {
-  color: green;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 /*-----------About-----------*/
 
 #about {
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.sub-title-about {
+  font-size: 80px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 0.1cap;
+}
+
+.sub-title-about span {
+  cursor: pointer;
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
 }
 
 .container-2 {
-  margin-top: 80px;
-  margin-left: 30px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.col-1 {
-  flex-basis: 35%;
-}
-
-.col-1 img {
-  margin-top: 20px;
-  width: 100%;
-  height: 90%;
-  border-radius: 20px;
+  padding-top: 4%;
+  text-align: center;
 }
 
 .col-2 {
-  flex-basis: 62%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.col-2 h1 {
-  margin-top: 10px;
-  font-size: 30px;
-  font-family: "Sen", sans-serif;
-}
+/* .col-2 h1 {
+  padding-top: 20px;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+} */
 
 .col-2 p {
-  font-size: 15px;
-  padding-top: 10px;
+  font-size: 1rem;
+  padding-top: 20px;
   padding-right: 30px;
   color: grey;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
 }
 
 .tab-titles {
-  padding-top: 15px;
+  padding-top: 40px;
   display: flex;
+  justify-content: center;
 }
 
 .tab-titles p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  font-family: "Robotto", sans-serif;
+  font-family: monospace;
   color: white;
 }
 
 .tab-name {
-  margin-right: 50px;
+  margin-left: 15px;
   cursor: pointer;
   position: relative;
+}
+
+.tab-name:hover {
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
 }
 
 .tab-name::after {
   content: "";
   width: 0;
   height: 3px;
-  background: red;
+  background: #cf59e6;
   left: 0;
   bottom: -6px;
   position: absolute;
@@ -775,22 +796,20 @@ h1 span:hover {
 }
 
 .tab-contents ul li {
-  padding-top: 20px;
+  padding-top: 40px;
   list-style: none;
-  font: 12px;
+  font: 18px;
+  font-family: monospace;
   color: grey;
 }
 
 .tab-contents ul li span {
-  font-size: 15px;
-  color: red;
-  font-family: "Sen", sans-serif;
+  font-size: 0.9rem;
+  color: #cf59e6;
+  font-family: monospace;
+  letter-spacing: 0.1cap;
   font-weight: bold;
   cursor: pointer;
-}
-
-.tab-contents ul li span:hover {
-  color: green;
 }
 
 .tab-contents {
@@ -814,19 +833,19 @@ h1 span:hover {
   margin-bottom: 60px;
 }
 
-.sub-title {
+.sub-title-projects {
   font-size: 50px;
   font-family: "Sen", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.sub-title span {
+.sub-title-projects span {
   color: red;
   cursor: pointer;
 }
 
-.sub-title span:hover {
+.sub-title-projects span:hover {
   color: green;
 }
 
@@ -907,22 +926,6 @@ h1 span:hover {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 60px;
-}
-
-.sub-title {
-  font-size: 50px;
-  font-family: "Sen", sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.sub-title span {
-  color: red;
-  cursor: pointer;
-}
-
-.sub-title span:hover {
-  color: green;
 }
 
 .certification-list {
@@ -1267,11 +1270,11 @@ form .btn.btn-2 {
     margin-left: 20px;
   }
 
-  .container-2 .sub-title {
+  .container-2 .sub-title-about {
     font-size: 40px;
   }
 
-  .container-2 .sub-title span {
+  .container-2 .sub-title-about span {
     font-size: 40px;
   }
 
@@ -1321,11 +1324,11 @@ form .btn.btn-2 {
     margin-left: 20px;
   }
 
-  .container-3 .sub-title {
+  .container-3 .sub-title-projects {
     font-size: 40px;
   }
 
-  .container-3 .sub-title span {
+  .container-3 .sub-title-projects span {
     font-size: 40px;
   }
 
@@ -1354,11 +1357,11 @@ form .btn.btn-2 {
     margin-left: 20px;
   }
 
-  .container-4 .sub-title {
+  .container-4 .sub-title-certifications {
     font-size: 40px;
   }
 
-  .container-4 .sub-title span {
+  .container-4 .sub-title-certifications span {
     font-size: 40px;
   }
 
@@ -1384,11 +1387,11 @@ form .btn.btn-2 {
     margin-bottom: 40px;
   }
 
-  .container-5 .sub-title {
+  .container-5 .sub-title-contacts {
     font-size: 40px;
   }
 
-  .container-5 .sub-title span {
+  .container-5 .sub-title-contacts span {
     font-size: 40px;
   }
 
