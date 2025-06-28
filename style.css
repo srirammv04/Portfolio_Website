@@ -729,7 +729,7 @@ nav ul li a:hover::after {
 }
 
 .container-2 {
-  padding-top: 4%;
+  padding-top: 3%;
   text-align: center;
 }
 
@@ -738,22 +738,17 @@ nav ul li a:hover::after {
   margin-right: 20%;
 }
 
-/* .col-2 h1 {
-  padding-top: 20px;
-  font-size: 1.8rem;
-  font-family: sans-serif;
-} */
-
 .col-2 p {
   font-size: 1rem;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 30px;
   color: grey;
   font-family: monospace;
+  line-height: 1.5em;
 }
 
 .tab-titles {
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -792,15 +787,16 @@ nav ul li a:hover::after {
 }
 
 .tab-name.active-name::after {
-  width: 40%;
+  width: 50%;
 }
 
 .tab-contents ul li {
-  padding-top: 40px;
+  padding-top: 30px;
   list-style: none;
   font: 18px;
   font-family: monospace;
   color: grey;
+  line-height: 1.5em;
 }
 
 .tab-contents ul li span {
@@ -809,7 +805,6 @@ nav ul li a:hover::after {
   font-family: monospace;
   letter-spacing: 0.1cap;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .tab-contents {
