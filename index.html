@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Sen:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css "
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/cc132c2e43.js"
@@ -25,6 +29,11 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
+
+    <!-- Scroll Button -->
+    <div id="scrollButton" class="scroll-button down">
+      <i class="fas fa-chevron-down"></i>
+    </div>
 
     <!----------- Nav Bar ----------->
 
@@ -39,12 +48,12 @@
               <a href="#certifications" onclick="closemenu()">Certifications</a>
             </li>
             <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-            <i
+            <!-- <i
               class="fa-sharp fa-solid fa-angle-right"
               onclick="closemenu()"
-            ></i>
+            ></i> -->
           </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
         </nav>
       </div>
       <div class="header-text">
@@ -62,17 +71,16 @@
         <div class="sub-title-about"><span>About</span> Me</div>
         <div class="col-2">
           <p>
-            Hi, I'm Sriram M V, a passionate and technologically driven Software
-            Development Engineer. With a strong foundation in computer science
-            principles and a curiosity for emerging technologies, I am
-            constantly seeking new ways to expand my knowledge and apply it to
-            real-world challenges. What truly fuels my enthusiasm for computer
-            science is its ability to impact people's lives. I believe
-            technology has the power to transform the world and improve the way
-            we live, work, and connect with each other. I am excited to share my
-            portfolio, which showcases my projects and achievements, giving you
-            a glimpse into my technical abilities. I hope that you find
-            inspiration and insight as you explore my work.
+            Hi, I'm Sriram M V, a passionate Software Developer with a strong
+            foundation in computer science principles and a curiosity for
+            emerging technologies, I am constantly seeking new ways to expand my
+            knowledge and apply it to real-world challenges. What truly fuels my
+            enthusiasm for computer science is its ability to impact people's
+            lives. I believe technology has the power to transform the world and
+            improve the way we live, work, and connect with each other. I am
+            excited to share my portfolio, which showcases my projects and
+            achievements, giving you a glimpse into my technical abilities. I
+            hope that you find inspiration and insight as you explore my work.
           </p>
           <div class="tab-titles">
             <p class="tab-name active-name" onclick="openTab('skills')">
@@ -139,10 +147,11 @@
           <div class="tab-contents" id="hobbies">
             <ul>
               <li>
-                <span>Games</span> <br />Chess <br />Puzzels <br />Rubik's Cube
+                <span>Strategic Games</span> <br />Chess <br />Puzzels
+                <br />Rubik's Cube
               </li>
               <li>
-                <span>Sports</span> <br />Cricket <br />Kabaddi <br />Running
+                <span>Sports</span> <br />Cricket <br />Kabaddi <br />Athletics
               </li>
               <li>
                 <span>Art</span> <br />Drawing <br />Painting <br />Sketching
@@ -154,36 +163,38 @@
       </div>
     </div>
 
-    <!-----------Projects----------->
+    <!----------- Projects ----------->
 
     <div id="projects">
       <div class="container-3">
         <div class="sub-title-projects">My <span>Projects</span></div>
         <section id="sectionProjects" class="section-projects">
-          <div class="project-card-1">
-            <h3>AR World</h3>
-            <h5>Flutter &nbsp; Dart &nbsp; Google AR</h5>
-            <a href="https://github.com/srirammv04/AR_World" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project-card-2">
-            <h3>RUN MACHINE</h3>
-            <h5>Flutter &nbsp; Dart &nbsp; API</h5>
-            <a
-              href="https://github.com/SriramMV04/RUN_MACHINE_app.git"
-              target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project-card-3">
-            <h3>Cornflix</h3>
-            <h5>Flutter &nbsp; Dart &nbsp; API</h5>
-            <a
-              href="https://github.com/SriramMV04/Cornflix_app.git"
-              target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
+          <div class="project-box-wrapper">
+            <div class="project-card-1">
+              <h3>AR World</h3>
+              <h5>Flutter &nbsp; Dart &nbsp; Google AR</h5>
+              <a href="https://github.com/srirammv04/AR_World" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="project-card-2">
+              <h3>RUN MACHINE</h3>
+              <h5>Flutter &nbsp; Dart &nbsp; REST API</h5>
+              <a
+                href="https://github.com/SriramMV04/RUN_MACHINE_app.git"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="project-card-3">
+              <h3>Cornflix</h3>
+              <h5>Flutter &nbsp; Dart &nbsp; REST API</h5>
+              <a
+                href="https://github.com/SriramMV04/Cornflix_app.git"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
         </section>
         <div class="more-projects">
@@ -194,7 +205,7 @@
       </div>
     </div>
 
-    <!-----------Certifications-------------->
+    <!----------- Certifications -------------->
 
     <div id="certifications">
       <div class="container-4">
@@ -202,30 +213,32 @@
           My <span>Certifications</span>
         </div>
         <section id="sectionCertificates" class="section-certificates">
-          <div class="certificate-card-1">
-            <h3>Python Programming</h3>
-            <h5>Data Structures &nbsp; OOPs &nbsp; Data Science</h5>
-            <a href="https://simpli.app.link/vNlCxFKYmBb" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="certificate-card-2">
-            <h3>HTML &amp; CSS for Web Development</h3>
-            <h5>HTML &nbsp; JavaScript &nbsp; CSS</h5>
-            <a
-              href="https://www.udemy.com/certificate/UC-4d95f5c4-7364-4baf-8ba8-cf42f3ba3ae4/"
-              target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="certificate-card-3">
-            <h3>Java Programming</h3>
-            <h5>DSA &nbsp; Java Collections &nbsp; OOPs</h5>
-            <a
-              href="https://www.coursera.org/account/accomplishments/verify/Y4WRURL45HZJ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
-              target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
+          <div class="certificate-box-wrapper">
+            <div class="certificate-card-1">
+              <h3>Python Programming</h3>
+              <h5>DSA &nbsp; Data Science &nbsp; OOPs</h5>
+              <a href="https://simpli.app.link/vNlCxFKYmBb" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="certificate-card-2">
+              <h3>HTML &amp; CSS for Web Development</h3>
+              <h5>HTML &nbsp; JavaScript &nbsp; CSS</h5>
+              <a
+                href="https://www.udemy.com/certificate/UC-4d95f5c4-7364-4baf-8ba8-cf42f3ba3ae4/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="certificate-card-3">
+              <h3>Java Programming</h3>
+              <h5>DSA &nbsp; Java Collections &nbsp; OOPs</h5>
+              <a
+                href="https://www.coursera.org/account/accomplishments/verify/Y4WRURL45HZJ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
         </section>
         <div class="more-certificates">
@@ -236,7 +249,7 @@
       </div>
     </div>
 
-    <!-----------Contact-------------->
+    <!----------- Contact -------------->
 
     <div id="contact">
       <div class="container-5">
@@ -301,48 +314,86 @@
             >
           </div>
         </section>
-        <!----------- Footer -------------->
-
-        <footer class="footer">
-          <h5 class="heading-5">&copy; Made with ❤️ Sriram M V</h5>
-        </footer>
       </div>
     </div>
 
-    <!-----------Script for sidemenu-------------->
+    <!----------- Footer -------------->
+
+    <footer class="footer">
+      <h5 class="heading-5">&copy; Made with ❤️ Sriram M V</h5>
+    </footer>
+
+    <!----------- Script for scroll button -------------->
 
     <script>
-      var sidemenu = document.getElementById("sidemenu");
+      // var sidemenu = document.getElementById("sidemenu");
 
-      function openmenu() {
-        sidemenu.style.right = "0";
+      // function openmenu() {
+      //   sidemenu.style.right = "0";
+      // }
+
+      // function closemenu() {
+      //   sidemenu.style.right = "-200px";
+      // }
+
+      const scrollBtn = document.getElementById("scrollButton");
+      const sections = [
+        "header",
+        "about",
+        "projects",
+        "certifications",
+        "contact",
+      ];
+      let currentIndex = 0;
+
+      function updateCurrentIndex() {
+        let currentScrollPos = window.scrollY + 100;
+        for (let i = 0; i < sections.length; i++) {
+          const section = document.getElementById(sections[i]);
+          if (section && section.offsetTop <= currentScrollPos) {
+            currentIndex = i;
+          }
+        }
       }
 
-      function closemenu() {
-        sidemenu.style.right = "-200px";
+      function scrollToSection(index) {
+        const section = document.getElementById(sections[index]);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop,
+            behavior: "smooth",
+          });
+        }
       }
-    </script>
 
-    <!-----------Script for submit button-------------->
+      function updateArrowDirection() {
+        updateCurrentIndex();
+        if (currentIndex < sections.length - 1) {
+          scrollBtn.classList.remove("up");
+          scrollBtn.classList.add("down");
+          scrollBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+        } else {
+          scrollBtn.classList.remove("down");
+          scrollBtn.classList.add("up");
+          scrollBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
+        }
+      }
 
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycby4ZXnL8afrRdBDVl7e4-wix3Ve5k5ZMzcp7Hnc1i8Q6eI5xS-UG-KZTQtGwRPaWL5Djw/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("message");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully!";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
+      scrollBtn.addEventListener("click", () => {
+        if (scrollBtn.classList.contains("down")) {
+          if (currentIndex < sections.length - 1) {
+            scrollToSection(currentIndex + 1);
+          } else {
+            scrollToSection(0);
+          }
+        } else {
+          scrollToSection(0);
+        }
+        setTimeout(updateArrowDirection, 100);
       });
+
+      window.addEventListener("scroll", updateArrowDirection);
+      window.addEventListener("load", updateArrowDirection);
     </script>
   </body>
 </html>
