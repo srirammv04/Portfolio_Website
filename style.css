@@ -598,7 +598,9 @@ body {
   width: 100%;
 }
 
-.scroll-button {
+/* Scroll Button */
+
+/* .scroll-button {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -622,7 +624,76 @@ body {
 .scroll-button:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #6bc5f8, 0 0 30px #cf59e6;
+} */
+
+.scroll-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s;
+  opacity: 0.5;
+  border: 3px solid #2a2b37;
+  text-align: center;
+  background: rgba(42, 43, 56, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.fa-chevron-down {
+  color: #797575;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.fa-chevron-up {
+  color: #797575;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Music Toggle */
+
+.music-box {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.5;
+  border: 3px solid #2a2b37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-box.paused .btn {
+  background: rgba(42, 43, 56, 0.5);
+}
+
+.music-box audio {
+  display: none;
+}
+
+.music-box .btn {
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.music-box .btn.play {
+  background: transparent;
+}
+
+.music-box .btn .fa {
+  font-size: 30px;
+  color: #797575;
+}
+
+/* Header Section */
 
 #header {
   width: 100%;
@@ -778,13 +849,13 @@ nav ul li a:hover::after {
 }
 
 .container-2 {
-  padding-top: 3%;
+  padding-top: 2%;
   text-align: center;
 }
 
 .col-2 {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .col-2 p {
@@ -840,7 +911,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li {
-  padding-top: 30px;
+  padding-top: 25px;
   list-style: none;
   font-size: 0.9rem;
   font-family: monospace;
@@ -861,12 +932,27 @@ nav ul li a:hover::after {
   -webkit-text-fill-color: transparent;
 }
 
+.logo-card img {
+  padding: 15px 15px 0 15px;
+  width: 2.3rem;
+  height: 2.3rem;
+  opacity: 0.8;
+}
+
 .tab-contents {
   display: none;
 }
 
 .tab-contents.active-tab {
   display: block;
+}
+
+.tab-contents-list {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: grey;
+  line-height: 1.5em;
 }
 
 /*----------Projects----------*/
@@ -879,7 +965,7 @@ nav ul li a:hover::after {
 }
 
 .container-3 {
-  padding-top: 3%;
+  padding-top: 2%;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -1147,7 +1233,7 @@ section {
 }
 
 .container-4 {
-  padding-top: 3%;
+  padding-top: 2%;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -1181,7 +1267,6 @@ section {
 
 /*-----------Contact------------*/
 
-/*----contact-left-col----*/
 #contact {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -1224,7 +1309,7 @@ section {
 }
 
 .heading-1 small {
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   font-size: smaller;
 }
 
@@ -1320,8 +1405,9 @@ section {
   opacity: 0.5;
 }
 
-/*---------------- CSS for smaller screen -----------------*/
+/*---------------- CSS for diff screen ratios -----------------*/
 
+/* Phones */
 @media only screen and (max-width: 37.5em) {
   html {
     font-size: 51%;
@@ -1331,16 +1417,6 @@ section {
     font-size: 1.4rem;
   }
 
-  .scroll-button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-
-  #header {
-    height: 100vh;
-  }
-
   #about,
   #projects,
   #certifications,
@@ -1348,13 +1424,76 @@ section {
     min-height: auto;
   }
 
+  .scroll-button {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .fa-chevron-down,
+  .fa-chevron-up {
+    font-size: 25px;
+  }
+
+  .music-box {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .music-box .btn .fa {
+    font-size: 22px;
+  }
+
+  #header {
+    height: 100vh;
+  }
+
+  nav ul li {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .header-text {
+    padding-bottom: 10%;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+  }
+
+  .header-text h2 {
+    font-size: 5rem;
+  }
+
+  .header-text h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+  }
+
+  .header-text p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
   .sub-title {
     font-size: 40px;
+    margin-bottom: 20px;
   }
 
   .container-2 .col-2 {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .col-2 p {
+    font-size: 1.2rem;
+  }
+
+  .tab-titles p {
+    font-size: 1.3rem;
+  }
+
+  .tab-contents ul li span {
+    font-size: 1.2rem;
   }
 
   .tab-name {
@@ -1364,6 +1503,20 @@ section {
 
   .tab-contents ul li {
     padding-top: 20px;
+  }
+
+  .logo-card img {
+    padding: 15px 10px 0 10px;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tab-contents-list {
+    padding-top: 10px;
+    font-size: 1.1rem;
+    font-family: monospace;
+    color: grey;
+    line-height: 1.5em;
   }
 
   .card-1,
@@ -1376,16 +1529,24 @@ section {
     padding: 1rem;
   }
 
+  .cards-section {
+    margin-top: 18%;
+  }
+
   .cards-section h3 {
-    font-size: 25px;
+    font-size: 2rem;
   }
 
   .cards-section h5 {
-    font-size: 10px;
+    font-size: 1rem;
+    /* white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5em; */
   }
 
   .cards-section a {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .card-1:hover,
@@ -1397,15 +1558,15 @@ section {
   }
 
   .section-contacts .heading-1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .section-contacts .heading-2 {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .social-links a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .heading-2 a {
@@ -1418,30 +1579,20 @@ section {
   .fa-square-reddit {
     padding-right: 5px;
   }
-}
 
-@media only screen and (max-width: 56.25em) {
-  html {
-    font-size: 54%;
+  .footer {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
   }
 
-  body {
-    font-size: 1.6rem;
-  }
-
-  #header {
-    height: 100vh;
-  }
-
-  #about,
-  #projects,
-  #certifications,
-  #contact {
-    min-height: auto;
+  .heading-5 {
+    font-size: 1.2rem;
+    letter-spacing: 2.2px;
   }
 }
 
-@media only screen and (max-width: 62.5em) {
+/* Tablets */
+@media only screen and (min-width: 37.5em) and (max-width: 62.5em) {
   html {
     font-size: 56.25%;
   }
@@ -1459,5 +1610,174 @@ section {
   #certifications,
   #contact {
     min-height: auto;
+    padding-bottom: 10%;
+  }
+
+  .scroll-button {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .fa-chevron-down,
+  .fa-chevron-up {
+    font-size: 35px;
+  }
+
+  .music-box {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .music-box .btn .fa {
+    font-size: 32px;
+  }
+
+  #header {
+    height: 100vh;
+  }
+
+  nav ul li {
+    font-size: 1em;
+    margin: 8px 8px;
+  }
+
+  .header-text {
+    padding-bottom: 0;
+  }
+
+  .header-text h1 {
+    font-size: 6rem;
+  }
+
+  .header-text h2 {
+    font-size: 8rem;
+  }
+
+  .header-text h3 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+  }
+
+  .header-text p {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
+  .sub-title {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+
+  .container-2 .col-2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .col-2 p {
+    font-size: 1.6rem;
+  }
+
+  .tab-name {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tab-titles p {
+    font-size: 1.8rem;
+  }
+
+  .tab-contents ul li span {
+    font-size: 1.7rem;
+  }
+
+  .tab-contents ul li {
+    padding-top: 30px;
+  }
+
+  .logo-card img {
+    padding: 15px 10px 0 10px;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .tab-contents-list {
+    padding-top: 10px;
+    font-size: 1.6rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 90%;
+    height: 35rem;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .cards-section {
+    margin-top: 10%;
+  }
+
+  .cards-wrapper {
+    grid-row-gap: 9rem;
+  }
+
+  .cards-section h3 {
+    font-size: 2.5rem;
+  }
+
+  .cards-section h5 {
+    font-size: 1.2rem;
+  }
+
+  .cards-section a {
+    font-size: 1.8rem;
+  }
+
+  .card-1:hover,
+  .card-2:hover,
+  .card-3:hover,
+  .card-4:hover {
+    transform: none;
+    animation: none;
+  }
+
+  .section-contacts {
+    margin-top: 5%;
+  }
+
+  .section-contacts .heading-1 {
+    font-size: 3.6rem;
+  }
+
+  .section-contacts .heading-2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .social-links a {
+    font-size: 2.4rem;
+  }
+
+  .heading-2 a {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+
+  .fa-square-github,
+  .fa-linkedin,
+  .fa-square-reddit {
+    padding-right: 10px;
+  }
+
+  .footer {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .heading-5 {
+    font-size: 2rem;
+    letter-spacing: 2.5px;
   }
 }

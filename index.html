@@ -31,8 +31,20 @@
     <div id="stars3"></div>
 
     <!-- Scroll Button -->
-    <div id="scrollButton" class="scroll-button down">
+    <div id="scrollButton" class="scroll-button down" title="Next">
       <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <!-- Background Music -->
+    <div class="music-box" title="Play/Pause Audio">
+      <button class="btn btn-play-music">
+        <i class="fa fa-pause"></i>
+      </button>
+      <br />
+      <audio id="audio" controls="controls" autoplay loop>
+        <source src="files/background-space-music.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
 
     <!----------- Nav Bar ----------->
@@ -40,26 +52,21 @@
     <div id="header">
       <nav class="centered-nav-bar">
         <ul id="sidemenu">
-          <li><a href="#header" onclick="closemenu()">Home</a></li>
-          <li><a href="#about" onclick="closemenu()">About</a></li>
-          <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li>
-            <a href="#certifications" onclick="closemenu()">Certifications</a>
+            <a href="#certifications">Certifications</a>
           </li>
-          <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-          <!-- <i
-              class="fa-sharp fa-solid fa-angle-right"
-              onclick="closemenu()"
-            ></i> -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
       </nav>
       <div class="container-1">
         <div class="header-text">
           <h1>Hey there!</h1>
           <h2>I'm <span>Sriram M V</span></h2>
           <h3>Full Stack Developer | Mobile App Developer</h3>
-          <p>"Quantity in hardwork Quality in execution, that's my motto"</p>
+          <p>"Quantity in hardwork; Quality in execution, that's my motto"</p>
         </div>
       </div>
     </div>
@@ -73,14 +80,15 @@
           <p>
             Hi, I'm Sriram M V, a passionate Software Developer with a strong
             foundation in computer science principles and a curiosity for
-            emerging technologies, I am constantly seeking new ways to expand my
+            emerging technologies. I am constantly seeking new ways to expand my
             knowledge and apply it to real-world challenges. What truly fuels my
             enthusiasm for computer science is its ability to impact people's
             lives. I believe technology has the power to transform the world and
             improve the way we live, work, and connect with each other. I am
-            excited to share my portfolio, which showcases my projects and
-            achievements, giving you a glimpse into my technical abilities. I
-            hope that you find inspiration and insight as you explore my work.
+            excited to share my dev portfolio with you, which showcases my
+            projects and achievements, giving you a glimpse into my technical
+            abilities. I hope that you find inspiration and insight as you
+            explore my work.
           </p>
           <div class="tab-titles">
             <p class="tab-name active-name" onclick="openTab('skills')">
@@ -93,16 +101,127 @@
           <div class="tab-contents active-tab" id="skills">
             <ul>
               <li>
-                <span>Programming Languages</span> <br />Java <br />JavaScript
-                <br />SQL <br />HTML & CSS
+                <span>Programming Languages</span>
+                <div class="logo-card">
+                  <img src="logos/java-icon.svg" alt="java logo" title="Java" />
+                  <img
+                    src="logos/mysql-icon.svg"
+                    alt="mysql logo"
+                    title="SQL"
+                  />
+                  <img
+                    src="logos/dartlang-icon.svg"
+                    alt="dart logo"
+                    title="Dart"
+                  />
+                </div>
+                <div class="logo-card">
+                  <img
+                    src="logos/w3_html5-icon.svg"
+                    alt="html logo"
+                    title="HTML"
+                  />
+                  <img src="logos/w3_css-icon.svg" alt="css logo" title="CSS" />
+                  <img
+                    src="logos/javascript-icon.svg"
+                    alt="javaScript logo"
+                    title="JavaScript"
+                  />
+                </div>
               </li>
               <li>
-                <span>Web Development</span> <br />Spring Boot <br />Postman
-                <br />React.js <br />Node.js <br />MySQL
+                <span>Frameworks &amp; Libraries </span>
+                <div class="logo-card">
+                  <img
+                    src="logos/springio-icon.svg"
+                    alt="spring logo"
+                    title="Spring Boot"
+                  />
+                  <img
+                    src="logos/reactjs-icon.svg"
+                    alt="react logo"
+                    title="React"
+                  />
+                  <img
+                    src="logos/flutterio-icon.svg"
+                    alt="flutter logo"
+                    title="Flutter"
+                  />
+                </div>
+                <div class="logo-card">
+                  <img
+                    src="logos/nodejs-icon.svg"
+                    alt="nodejs logo"
+                    title="Node.js"
+                  />
+                  <img
+                    src="logos/expoio-icon.svg"
+                    alt="expo logo"
+                    title="Expo"
+                  />
+                  <img
+                    src="logos/apache_maven-icon.svg"
+                    alt="maven logo"
+                    title="Maven"
+                  />
+                  <img
+                    src="logos/vitejsdev-icon.svg"
+                    alt="vite logo"
+                    title="Vite"
+                  />
+                </div>
               </li>
               <li>
-                <span>App Development</span> <br />
-                React Native <br />Flutter <br />Android Studio <br />Firebase
+                <span>Developer Tools</span> <br />
+                <div class="logo-card">
+                  <img
+                    src="logos/jetbrains-icon.svg"
+                    alt="intellij logo"
+                    title="intelliJ IDEA"
+                  />
+                  <img
+                    src="logos/getpostman-icon.svg"
+                    alt="postman logo"
+                    title="Postman"
+                  />
+                  <img
+                    src="logos/android-icon.svg"
+                    alt="android logo"
+                    title="Android Studio"
+                  />
+                  <img
+                    src="logos/visualstudio_code-icon.svg"
+                    alt="vscode logo"
+                    title="VS Code"
+                  />
+                </div>
+                <div class="logo-card">
+                  <img
+                    src="logos/git-scm-icon.svg"
+                    alt="git logo"
+                    title="Git"
+                  />
+                  <img
+                    src="logos/phpmyadmin-icon.svg"
+                    alt="phpmyadmin logo"
+                    title="PhpMyAdmin"
+                  />
+                  <img
+                    src="logos/docker-icon.svg"
+                    alt="docker logo"
+                    title="Docker"
+                  />
+                  <img
+                    src="logos/linux-icon.svg"
+                    alt="linux logo"
+                    title="Linux"
+                  />
+                  <img
+                    src="logos/firebase-icon.svg"
+                    alt="firebase logo"
+                    title="Firebase"
+                  />
+                </div>
               </li>
             </ul>
           </div>
@@ -110,18 +229,25 @@
             <ul>
               <li>
                 <span>Canara Engineering College</span>
-                <br />2020 - 2024 <br />B.E. Computer Science & Engineering
-                <br />Mangalore, Karnataka <br />7.98 CGPA
+                <div class="tab-contents-list">
+                  2020 - 2024 <br />B.E. Computer Science & Engineering
+                  <br />Mangalore <br />Karnataka <br />7.98 CGPA
+                </div>
               </li>
               <li>
-                <span>Sri Venkataramana PU College</span> <br />2018 - 2019
-                <br />12<sup>th</sup> PUC, PCMC <br />Kundapura, Karnataka
-                <br />86.16%
+                <span>Sri Venkataramana PU College</span>
+                <div class="tab-contents-list">
+                  2018 - 2019
+                  <br />12<sup>th</sup> PUC, Computer Science <br />Kundapura
+                  <br />Karnataka <br />86.16%
+                </div>
               </li>
               <li>
-                <span>Sri Venkataramana English Medium School</span> <br />2017
-                - 2018 <br />10<sup>th</sup> SSLC <br />Kundapura, Karnataka
-                <br />90.40%
+                <span>Sri Venkataramana English Medium School</span>
+                <div class="tab-contents-list">
+                  2017 - 2018 <br />10<sup>th</sup> SSLC <br />Kundapura
+                  <br />Karnataka <br />90.40%
+                </div>
               </li>
             </ul>
           </div>
@@ -129,34 +255,51 @@
             <ul>
               <li>
                 <span>Sclera VDMS Pvt Ltd.</span>
-                <br />Apr 2024 - Present <br />Associate Backend Developer
-                <br />Mangalore, Karnataka
+                <div class="tab-contents-list">
+                  Apr 2024 - Present <br />Associate Backend Developer
+                  <br />Mangalore <br />Karnataka
+                </div>
               </li>
               <li>
                 <span>Sclera VDMS Pvt Ltd.</span>
-                <br />Feb 2024 - Apr 2024 <br />Software Developer Intern
-                <br />Mangalore, Karnataka
+                <div class="tab-contents-list">
+                  Feb 2024 - Apr 2024 <br />Software Developer Intern
+                  <br />Mangalore <br />Karnataka
+                </div>
               </li>
               <li>
                 <span>QSpiders Campus Connect Program</span>
-                <br />Aug 2023 - Sep 2023 <br />Student Intern <br />Mangalore,
-                Karnataka
+                <div class="tab-contents-list">
+                  Aug 2023 - Sep 2023 <br />Student Intern <br />Mangalore
+                  <br />Karnataka
+                </div>
               </li>
             </ul>
           </div>
           <div class="tab-contents" id="hobbies">
             <ul>
               <li>
-                <span>Strategic Games</span> <br />Chess <br />Puzzels
-                <br />Rubik's Cube
+                <span>Strategic Games</span>
+                <div class="tab-contents-list">
+                  Puzzels <br />Chess <br />Rubik's Cube
+                </div>
               </li>
               <li>
-                <span>Sports</span> <br />Cricket <br />Kabaddi <br />Athletics
+                <span>Sports</span>
+                <div class="tab-contents-list">
+                  Cricket <br />Kabaddi <br />Athletics
+                </div>
               </li>
               <li>
-                <span>Art</span> <br />Drawing <br />Painting <br />Sketching
+                <span>Visual Arts</span>
+                <div class="tab-contents-list">
+                  Drawing <br />Painting <br />Sketching
+                </div>
               </li>
-              <li><span>Writing</span> <br />Quotes <br />Proverbs</li>
+              <li>
+                <span>Creative Writing</span>
+                <div class="tab-contents-list">Quotes <br />Proverbs</div>
+              </li>
             </ul>
           </div>
         </div>
@@ -212,49 +355,6 @@
           >
         </div> -->
       </div>
-      <!-- <div class="logo-cards-container">
-        <div class="logo-card-wrapper logoCardsAnimation" id="logoTrack1">
-          <div class="logo-card">
-            <img src="logos/java-icon.svg" alt="java logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/javascript-icon.svg" alt="javaScript logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/w3_html5-icon.svg" alt="html logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/w3_css-icon.svg" alt="css logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/mysql-icon.svg" alt="mysql logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/springio-icon.svg" alt="spring logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/nodejs-icon.svg" alt="nodejs logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/reactjs-icon.svg" alt="react logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/flutterio-icon.svg" alt="flutter logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/firebase-icon.svg" alt="firebase logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/dartlang-icon.svg" alt="dart logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/vitejsdev-icon.svg" alt="vite logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/expoio-icon.svg" alt="expo logo" />
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <!----------- Certifications -------------->
@@ -266,7 +366,7 @@
           <div class="cards-wrapper">
             <div class="card-1">
               <h3>Python Programming</h3>
-              <h5>Python &nbsp; Data Science &nbsp; OOPs</h5>
+              <h5>Python &nbsp; Data Science &nbsp; OOP</h5>
               <a
                 href="https://simpli.app.link/vNlCxFKYmBb"
                 target="_blank"
@@ -286,7 +386,7 @@
             </div>
             <div class="card-3">
               <h3>Java Programming</h3>
-              <h5>DSA &nbsp; Core &amp; Advance Java &nbsp; OOPs</h5>
+              <h5>DSA &nbsp; Java &nbsp; OOP</h5>
               <a
                 href="https://www.coursera.org/account/accomplishments/verify/Y4WRURL45HZJ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
                 target="_blank"
@@ -296,7 +396,7 @@
             </div>
             <div class="card-4">
               <h3>QSpiders Campus Connect</h3>
-              <h5>Java &nbsp; DSA &nbsp; OOPs &nbsp; SQL</h5>
+              <h5>Java &nbsp; DSA &nbsp; OOP &nbsp; SQL</h5>
               <a
                 href="files/Qspiders Internship Certificate .pdf"
                 download="Sriram_Qspiders_Internship_Certificate.pdf"
@@ -311,43 +411,6 @@
           >
         </div> -->
       </div>
-      <!-- <div class="logo-cards-container">
-        <div class="logo-card-wrapper logoCardsAnimation" id="logoTrack2">
-          <div class="logo-card">
-            <img src="logos/getpostman-icon.svg" alt="postman logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/jetbrains-icon.svg" alt="intellij logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/visualstudio_code-icon.svg" alt="vscode logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/docker-icon.svg" alt="docker logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/phpmyadmin-icon.svg" alt="phpmyadmin logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/linux-icon.svg" alt="linux logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/microsoft-icon.svg" alt="windows logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/git-scm-icon.svg" alt="git logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/android-icon.svg" alt="android logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/ubuntu-icon.svg" alt="ubuntu logo" />
-          </div>
-          <div class="logo-card">
-            <img src="logos/github-icon.svg" alt="github logo" />
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <!----------- Contact -------------->
@@ -429,16 +492,6 @@
     <!----------- Script for scroll button -------------->
 
     <script>
-      // var sidemenu = document.getElementById("sidemenu");
-
-      // function openmenu() {
-      //   sidemenu.style.right = "0";
-      // }
-
-      // function closemenu() {
-      //   sidemenu.style.right = "-200px";
-      // }
-
       const scrollBtn = document.getElementById("scrollButton");
       const sections = [
         "header",
@@ -498,7 +551,89 @@
       window.addEventListener("scroll", updateArrowDirection);
       window.addEventListener("load", updateArrowDirection);
     </script>
+
     <script>
+      const audio = document.getElementById("audio");
+      const playButton = document.querySelector(".btn-play-music");
+      const musicBox = document.querySelector(".music-box");
+      const icon = playButton.querySelector(".fa");
+      let isPlaying = false;
+
+      // Try to start playing immediately
+      function startMusic() {
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(function () {
+              // Autoplay started successfully
+              isPlaying = true;
+              updateUI();
+            })
+            .catch(function (error) {
+              // Autoplay failed, wait for user interaction
+              isPlaying = false;
+              updateUI();
+
+              // Add one-time click listener to start music on first user interaction
+              document.addEventListener(
+                "click",
+                function startOnClick() {
+                  audio.play();
+                  document.removeEventListener("click", startOnClick);
+                },
+                { once: true }
+              );
+            });
+        }
+      }
+
+      // Update UI based on playing state
+      function updateUI() {
+        if (isPlaying) {
+          playButton.classList.remove("play");
+          musicBox.classList.remove("paused");
+          icon.classList.remove("fa-play");
+          icon.classList.add("fa-pause");
+        } else {
+          playButton.classList.add("play");
+          musicBox.classList.add("paused");
+          icon.classList.remove("fa-pause");
+          icon.classList.add("fa-play");
+        }
+      }
+
+      // Handle play/pause button click
+      playButton.addEventListener("click", function () {
+        if (isPlaying) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+      });
+
+      // Handle audio events
+      audio.addEventListener("playing", function () {
+        isPlaying = true;
+        updateUI();
+      });
+
+      audio.addEventListener("pause", function () {
+        isPlaying = false;
+        updateUI();
+      });
+
+      // Start music when page loads
+      window.addEventListener("load", function () {
+        startMusic();
+      });
+
+      // Also try when DOM is ready (backup)
+      document.addEventListener("DOMContentLoaded", function () {
+        startMusic();
+      });
+    </script>
+
+    <!-- <script>
       window.addEventListener("DOMContentLoaded", () => {
         const track = document.getElementById("logoTrack1");
         const cards = [...track.children];
@@ -525,6 +660,6 @@
           track.classList.add("cloned");
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
