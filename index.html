@@ -17,7 +17,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css "
       rel="stylesheet"
     />
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/cc132c2e43.js"
       crossorigin="anonymous"
@@ -493,7 +492,7 @@
       <h5 class="heading-5">&copy; Made with ❤️ Sriram M V</h5>
     </footer>
 
-    <!----------- Script for scroll button -------------->
+    <!----------- JavaScript Code Section -------------->
 
     <script>
       const scrollBtn = document.getElementById("scrollButton");
@@ -563,22 +562,18 @@
       const icon = playButton.querySelector(".fa");
       let isPlaying = false;
 
-      // Try to start playing immediately
       function startMusic() {
         const playPromise = audio.play();
         if (playPromise !== undefined) {
           playPromise
             .then(function () {
-              // Autoplay started successfully
               isPlaying = true;
               updateUI();
             })
             .catch(function (error) {
-              // Autoplay failed, wait for user interaction
               isPlaying = false;
               updateUI();
 
-              // Add one-time click listener to start music on first user interaction
               document.addEventListener(
                 "click",
                 function startOnClick() {
@@ -591,7 +586,6 @@
         }
       }
 
-      // Update UI based on playing state
       function updateUI() {
         if (isPlaying) {
           playButton.classList.remove("play");
@@ -606,7 +600,6 @@
         }
       }
 
-      // Handle play/pause button click
       playButton.addEventListener("click", function () {
         if (isPlaying) {
           audio.pause();
@@ -615,7 +608,6 @@
         }
       });
 
-      // Handle audio events
       audio.addEventListener("playing", function () {
         isPlaying = true;
         updateUI();
@@ -626,15 +618,30 @@
         updateUI();
       });
 
-      // Start music when page loads
       window.addEventListener("load", function () {
         startMusic();
       });
 
-      // Also try when DOM is ready (backup)
       document.addEventListener("DOMContentLoaded", function () {
         startMusic();
       });
+    </script>
+    <script>
+      var tabnames = document.getElementsByClassName("tab-name");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      var tabname;
+      var tabcontent;
+
+      function openTab(tablink) {
+        for (tabname of tabnames) {
+          tabname.classList.remove("active-name");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-name");
+        document.getElementById(tablink).classList.add("active-tab");
+      }
     </script>
 
     <!-- <script>
