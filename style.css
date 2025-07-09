@@ -14,8 +14,7 @@ html {
 
 @font-face {
   font-family: "Mark Pro Heavy";
-  src: url("/Portfolio_Website/fonts/MarkPro-Heavy.f9372e73.woff")
-    format("woff");
+  src: url("./fonts/MarkPro-Heavy.f9372e73.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
