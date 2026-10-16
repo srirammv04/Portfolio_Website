@@ -793,12 +793,12 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Sen", sans-serif;
 }
 
 .header-text h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: "Sen", sans-serif;
 }
 
@@ -826,14 +826,14 @@ nav ul li a:hover::after {
 
 .header-text h3 {
   margin-top: 10px;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: monospace;
 }
 
 .header-text p {
   margin-top: 40px;
   color: grey;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   font-style: italic;
 }
@@ -848,7 +848,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-  font-size: 80px;
+  font-size: 50px;
   font-family: monospace;
   font-weight: bold;
   margin-bottom: 40px;
@@ -876,7 +876,7 @@ nav ul li a:hover::after {
 }
 
 .col-2 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-top: 10px;
   color: grey;
   font-family: monospace;
@@ -890,7 +890,7 @@ nav ul li a:hover::after {
 }
 
 .tab-titles p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: monospace;
   color: white;
@@ -937,7 +937,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* color: #cf59e6; */
   /* font-family: monospace; */
   font-family: "Mark Pro Heavy";
@@ -966,7 +966,7 @@ nav ul li a:hover::after {
 
 .tab-contents-list {
   padding-top: 10px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: monospace;
   color: grey;
   line-height: 1.5em;
@@ -1311,7 +1311,7 @@ section {
 .section-contacts .heading-1 {
   display: flex;
   align-items: center;
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
 }
 
@@ -1331,7 +1331,7 @@ section {
 }
 
 .heading-2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 130.4%;
   letter-spacing: 0.1rem;
   color: var(--color-gray);
@@ -1357,7 +1357,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  /* margin-top: 0.2rem; */
   gap: 1rem;
   flex-wrap: wrap;
   max-width: 40rem;
@@ -1372,7 +1372,7 @@ section {
   font-family: monospace;
   line-height: 92.4%;
   letter-spacing: -0.03em;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -1399,7 +1399,7 @@ section {
 
 .fa-square-github,
 .fa-linkedin,
-.fa-square-reddit {
+.fa-briefcase {
   padding-right: 10px;
 }
 
